@@ -215,6 +215,15 @@
 // var d = weekday[day.getDay()];
 // alert("Today is " + d);
 
+// Task4:
+// dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var a = new Date();
+// var day = a.getDay();
+// var dayFormat = dayNames[day]
+// if (dayFormat == dayNames[0] || dayFormat == dayNames[6]){
+//     alert("It's Fun day");
+// }
+
 // Task5:
 // var date = new Date();
 // var reqDate = date.getDate();
@@ -223,6 +232,14 @@
 // }else{
 //     document.write("First fifteen days of the month");
 // }
+
+// Task6:
+// var a = new Date();
+// document.write("Current Date: " + a + "<br>");
+// var millisec = a.getTime();
+// document.write("Elapsed milliseconds since January 1, 1970: " + millisec + "<br>");
+// var minutes = millisec/(1000*60).toFixed();
+// document.write("Elapsed minutes since January 1, 1970: " + minutes + "<br>");
 
 // Task7:
 // var a = new Date();
@@ -326,4 +343,29 @@
 // var result = square(7);
 // document.write(result);
 
+// Task6:
+// function factorial(num){
+//     if (num === 0 || num === 1)
+//     return 1;
+//     for(var i = num - 1; i >= 1; i--){
+//         num = num * i
+//     }return num
+// }
+// var result = factorial(7);
+// document.write(result);
+
 // Task7:
+// function count(){
+//     var num1 = +prompt("Enter first number");
+//     var num2 = +prompt("Enter second number");
+//     if (num1 <= num2){
+//         for (var i = num1; i <= num2; i++){
+//             document.write(i + "<br>");
+//         }
+//     }else{
+//         alert("invalid input");
+//     }
+// }
+// count();
+
+// Task8:
