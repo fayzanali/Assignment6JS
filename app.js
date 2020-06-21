@@ -79,7 +79,35 @@
 //     }
 // }
 
+// Task14:
+// a = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var search = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?")
+// var found = false;
+// for (var i = 0; i < search.length; i++){
+//     if(search.toLowerCase() === a[i] || search.toUpperCase() === a[i]) {
+//         found = true;
+//         break;
+//     }
+// }
+// if (found == true){
+//     document.write(search + " is available at index " + i + "in our Bakery" + "<br>")
+// }else{
+//     document.write("We are sorry. " + search + " is not available in our Bakery")
+// }
 
+// Task15:
+// var pass = prompt("Enter Password: ");
+// var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// var flag = false
+// for(var i = 0; i < pass.length; i++){
+//     if ((pass.charCodeAt([i]) >= 65 && pass.charCodeAt([i]) <= 90) || (pass.charCodeAt([i])>=97 && pass.charCodeAt(i)<=122) || (pass.length < 6) || pass.charCodeAt(0) != num[i]){
+//         flag = true;
+//         break;
+//     }
+// }
+// if (flag==false){
+//     alert("Please enter a valid password")
+// }
 
 // Task16:
 // var university = "University of Karachi";
