@@ -157,7 +157,39 @@
 // document.write("The absolute value of " + abv + " is " + av + "<br>");
 
 // Task4:
+// var a = Math.floor(Math.random() * 6) + 1;
+// document.write("random dice value: " + a + "<br>");
+// var b = Math.floor(Math.random() * 6) + 1;
+// document.write("random dice value: " + b + "<br>");
 
+// Task5:
+// var a = Math.floor(Math.random() * 2) + 1
+// document.write(a + "<br>")
+// if (a == 1){
+//     document.write("random coin value: Tails");
+// }
+// else if(a == 2){
+//     document.write("random coin value: Heads");
+// }
+
+// Task6:
+// var a = Math.round(Math.random() * 100);
+// document.write("Random number between 1 and 100: " + a + "<br>");
+
+// Task7:
+// var weight = prompt("Enter your weight in kilograms");
+// var wt1 = weight.match(/.\d+/g);
+// var wt2 = wt1.join("");
+// document.write("The weight of user is " + wt2 + " kilograms");
+
+// Task8:
+// var a = Math.round(Math.random() * 10);
+// var num = +prompt("Enter a number between 1 and 10");
+// if (num == a){
+//         alert("Congratulations Your Guess is Correct!");
+//     }else{
+//         alert("Try again!");
+// }
 
 // CHAPTER 31-34
 // Task1:
