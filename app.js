@@ -51,7 +51,6 @@
 // document.write("Value: " + b + "<br>");
 // document.write("Type: " + typeof(b));
 
-
 // Task10:
 // var a = prompt("Enter your value");
 // document.write("User input: " + a + "<br>");
@@ -72,6 +71,14 @@
 // document.write("Result: " + str2 + "<br>");
 
 // Task13:
+// var username = prompt("Enter Username: ")
+// for (var i = 0; i < username.length; i++){
+//     if(username.charCodeAt([i]) == 33 || username.charCodeAt([i])==44 || username.charCodeAt([i])==46 || username.charCodeAt([i])==64){
+//         alert("Please enter a valid username")
+//         break;        
+//     }
+// }
+
 
 
 // Task16:
@@ -251,3 +258,12 @@
 // }
 // var result = operation(30,6,"/")
 // document.write(result);
+
+// Task5:
+// function square(num){
+//     return num**2;
+// }
+// var result = square(7);
+// document.write(result);
+
+// Task7:
