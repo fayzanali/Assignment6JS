@@ -97,16 +97,17 @@
 
 // Task15:
 // var pass = prompt("Enter Password: ");
-// var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-// var flag = false
-// for(var i = 0; i < pass.length; i++){
-//     if ((pass.charCodeAt([i]) >= 65 && pass.charCodeAt([i]) <= 90) || (pass.charCodeAt([i])>=97 && pass.charCodeAt(i)<=122) || (pass.length < 6) || pass.charCodeAt(0) != num[i]){
-//         flag = true;
+// var nums = "01234567890"
+// var flag = true
+// if (pass.length >= 6){
+// for(var i = 0; i < nums.length; i++){
+//     if (pass[0] == nums[i] ){
+//         alert("Password should not start with a number");
 //         break;
 //     }
 // }
-// if (flag==false){
-//     alert("Please enter a valid password")
+// }else{
+//     alert("Length should be atleast 6");
 // }
 
 // Task16:
@@ -211,7 +212,6 @@
 // weekday[4] = "Thu";
 // weekday[5] = "Fri";
 // weekday[6] = "Sat";
-
 // var d = weekday[day.getDay()];
 // alert("Today is " + d);
 
@@ -315,10 +315,13 @@
 // tellTime()
 
 // Task2:
-// function name(f_name,l_name){
+// function name(){
+//     var f_name = prompt("Enter first name");
+//     var l_name = prompt("Enter last name");
+//     var name = f_name + " " + l_name
 //     document.write("Welcome to Global Tagg " + f_name + " " + l_name);
 // }
-// name("Fayzan", "Ali")
+// name()
 
 // Task3:
 // function add(){
@@ -369,3 +372,107 @@
 // count();
 
 // Task8:
+// function hyp(base, perp){
+//     function sqr(num){
+//         return num*num;
+//     }
+//     return Math.sqrt(sqr(base) + sqr(perp));
+// }
+// function calc(){
+//     var base = +prompt("Enter base value");
+//     var perpendicular = +prompt("Enter perpendicular value");
+//     var result = hyp(base, perpendicular);
+//     alert(result)
+// }
+// calc()
+
+// Task9:
+// function area(width, height){
+//     document.write("Width: " + width + "<br>");
+//     document.write("Height: " + height + "<br>");
+//     return width * height;
+// }
+// var result = area(15,20);
+// document.write("Area: " + result + "<br>");
+// function area(width = 15, height = 10){
+//     return width * height;
+// }
+// var result = area();
+// document.write("Area: " + result + "<br>");
+
+// Task10:
+// function palindrome(str){
+//     var result = /[\W_]/g;
+//     var a = str.toLowerCase().replace(result, "");
+//     var b = a.split("").reverse().join("");
+//     return b === a;
+// }
+// function check_palindrome(){
+//     var str = prompt("Enter Text");
+//     if (palindrome(str)){
+//         alert(str + " is Palindrome");
+//     }else{
+//         alert(str + " is not Palindrome");
+//     }
+// }
+// check_palindrome()
+
+
+// Task11:
+// function titleCase(str){
+//     var a = str.toLowerCase().split(' ');
+//     for (var i = 0; i < a.length; i++){
+//         a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1) 
+//     }
+//     return a.join(' ');
+// }
+// var result = titleCase("the quick brown fox");
+// document.write("EXAMPLE STRING : the quick brown fox" + "<br>")
+// document.write("EXPECTED OUTPUT : " + result + "<br>")
+
+// Task12:
+// function longestWord(str){
+//     var strSplit = str.split(' ');
+//     var longestWord = [0];
+
+//     for(var i = 0; i < strSplit.length; i++){
+//         if(strSplit[i].length > longestWord.length){
+//             longestWord = strSplit[i]
+//         }
+//     }
+
+//     return longestWord;
+// }
+// var result = longestWord("Web Development Tutorial");
+// document.write("EXAMPLE STRING : Web Development Tutorial" + "<br>");
+// document.write("EXPECTED OUTPUT : " + result);
+
+// Task13:
+// var a = "JSResourceS.com";
+// var chr = "o";
+// function count(a, chr){
+//     var letter_count = 0
+//     for (var i = 0; i < a.length; i++){
+//         if (a.charAt([i]) == chr){
+//             letter_count += 1 
+//         }
+//     }
+//     return letter_count;
+// }
+// var result = count("JSResourceS.com", "o");
+// document.write("Occurrence of " + chr + " in " + a + " is: " + result);
+
+// Task14:
+// function calcCircumference(radius){
+//     var circumference = (2*3.14*radius);
+//     return circumference.toFixed(2);
+// }
+// var result = calcCircumference(5);
+// document.write("The Circumference is " + result + "<br>");
+
+// function calcArea(radius){
+//     var Area = (3.14 * (radius)**2);
+//     return Area.toFixed(2);
+// }
+// var result = calcArea(5);
+// document.write("The Area is " + result + "<br>");
